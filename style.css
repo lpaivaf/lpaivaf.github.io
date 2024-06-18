@@ -2,6 +2,7 @@
     --primary-color: rgb(4, 45, 100);
     --secondary-color: rgb(8, 26, 61);
     --tertiary-color: #0B9EDC;
+    --border-color: rgb(255, 166, 0);
 }
 
 * {
@@ -76,7 +77,7 @@ header {
     position: absolute;
     width: 2.5rem;
     height: 1.5rem;
-    box-shadow: -3px -3px 0 #ffa600;
+    box-shadow: -3px -3px 0 var(--border-color);
     transform: translateX(-1rem)translateY(-.4rem);
 }
 
@@ -85,13 +86,17 @@ header {
 
 }
 
+.header_menu{
+    font-size: 1.2rem;
+}
+
 .hamburger_menu {
     position: absolute;
-    width: 285px;
-    height: 245px;
+    width: 330px;
+    height: 265px;
     background-color: #ccc;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    transform: translateX(-78px) translateY(5px);
+    transform: translateX(-55px) translateY(5px);
     right: 0;
     top: 5rem;
     display: flex;
@@ -174,7 +179,7 @@ nav ul li a {
 
 nav ul li a:hover {
     padding: .3rem .5rem;
-    background-image: linear-gradient(to left, #ccc, #8d8b8b);
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 /* Classe usada para esconder o checkbox*/
@@ -219,7 +224,7 @@ nav ul li a:hover {
     height: 179px;
     background-color: var(--tertiary-color);
     clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
-    transform: translateX(-95px) translateY(39px);
+    transform: translateX(-75px) translateY(39px);
     right: 0;
 }
 
@@ -238,7 +243,7 @@ nav ul li a:hover {
 .img_logo img {
     position: absolute;
     width: 240px;
-    transform: translateX(-113px) translateY(10px);
+    transform: translateX(-93px) translateY(10px);
     right: 0;
     filter: drop-shadow(-14px 6px 0px #cccccc);
 }
@@ -254,7 +259,7 @@ nav ul li a:hover {
 
 .texto-capa h1 {
     font-size: 2.5rem;
-    margin: 1rem 0;
+    margin: 2.5rem 0 1rem ;
 }
 
 .texto-capa h2 {
@@ -453,24 +458,24 @@ p {
 
 .blog,
 .página-de-vendas {
-    display: flex;
-    gap: 1.5rem;
+    /* display: flex; */
+    /* gap: 1.5rem; */
     backdrop-filter: blur(30px);
     box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
-    border: 2px solid rgba(225, 225, 225, 0.18) ;
+    border: 2px solid rgba(225, 225, 225, 0.18);
     padding: 2rem;
     border-radius: 10px;
 }
 
-.página-de-vendas {
+/* .página-de-vendas {
     flex-direction: row-reverse;
-}
+} */
 
 .imagem_blog img,
 .imagem_página-de-vendas img {
-    width: 150px;
+    width: 70px;
     filter: drop-shadow(0 0 2px #ccc);
-    /* margin-bottom: 1rem; */
+    margin-bottom: 1.5rem;
 }
 
 .imagem_blog a:nth-child(2) {
@@ -509,7 +514,8 @@ p {
     text-align: right;
 }
 
-.parágrafo-blog p:nth-child(1), .parágrafo-página-de-vendas p:nth-child(1){
+.parágrafo-blog p:nth-child(1),
+.parágrafo-página-de-vendas p:nth-child(1) {
     margin-top: 0;
 }
 
@@ -602,20 +608,24 @@ textarea {
 /*Corrigir o seletor de atributos*/
 /*Corrigido*/
 
-input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder{
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
     font-size: .8rem;
     color: var(--primary-color);
 }
 
-input[type="text"]:placeholder-shown, input[type="email"]:placeholder-shown, textarea:placeholder-shown{
-    background-color:#dfdfdf;
+input[type="text"]:placeholder-shown,
+input[type="email"]:placeholder-shown,
+textarea:placeholder-shown {
+    background-color: #dfdfdf;
 }
 
 
 .btn {
     display: flex;
     justify-content: center;
-    padding:.5rem;
+    padding: .5rem;
     font-size: 1.3rem;
     font-weight: 400;
     max-width: 140px;
@@ -633,7 +643,7 @@ input[type="text"]:placeholder-shown, input[type="email"]:placeholder-shown, tex
     transition: .2s ease-in-out;
 }
 
-.btn img{
+.btn img {
     width: 2rem;
     padding-left: .6rem;
 }
@@ -659,7 +669,7 @@ input[type="text"]:placeholder-shown, input[type="email"]:placeholder-shown, tex
     position: absolute;
     width: 2.5rem;
     height: 1.5rem;
-    box-shadow: 3px 3px 0 #ffa600;
+    box-shadow: 3px 3px 0 var(--border-color);
     right: 10%;
     bottom: 25%;
 }
@@ -720,6 +730,10 @@ input[type="text"]:placeholder-shown, input[type="email"]:placeholder-shown, tex
         display: block;
     }
 
+    .img_logo img {
+        transform: translateX(-113px) translateY(10px);
+    }
+
     .header_menu ul {
         display: block;
     }
@@ -743,7 +757,7 @@ input[type="text"]:placeholder-shown, input[type="email"]:placeholder-shown, tex
 
     nav ul li a:hover {
         padding: .3rem;
-        background-image: linear-gradient(to left, var(--primary-color), var(--secondary-color));
+        border-bottom: 2px solid  var(--border-color);
     }
 
     .md-2-4 {
@@ -753,6 +767,10 @@ input[type="text"]:placeholder-shown, input[type="email"]:placeholder-shown, tex
     .md-5-11 {
         grid-column: 5 / 12;
         right: 10%;
+    }
+
+    .retangulo {
+        transform: translateX(-95px) translateY(39px);
     }
 
     .hexagono1 {
@@ -857,12 +875,23 @@ input[type="text"]:placeholder-shown, input[type="email"]:placeholder-shown, tex
         font-size: 1rem;
         flex-grow: 0;
         align-content: center;
-        }
-        
-        .habilidade-icon li {
-            width: 8rem;
-            flex-grow: 0;
     }
+
+    .habilidade-icon li {
+        width: 8rem;
+        flex-grow: 0;
+    }
+
+    .blog,
+    .página-de-vendas {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .página-de-vendas {
+        flex-direction: row-reverse;
+    }
+    
 
     .imagem_blog img,
     .imagem_página-de-vendas img {
@@ -968,7 +997,7 @@ input[type="text"]:placeholder-shown, input[type="email"]:placeholder-shown, tex
         height: 95px;
         background-color: var(--primary-color);
         clip-path: polygon(0% 0%, 0% 75%, 50% 100%, 100% 75%, 100% 0%);
-        transform: translateY(450px);
+        transform: translateY(490px);
         left: 10%;
     }
 
@@ -1186,7 +1215,7 @@ input[type="text"]:placeholder-shown, input[type="email"]:placeholder-shown, tex
     }
 
     .seta_curta {
-        transform: translateY(450px);
+        transform: translateY(490px);
     }
 
     .lg-5-9 {
@@ -1235,12 +1264,12 @@ input[type="text"]:placeholder-shown, input[type="email"]:placeholder-shown, tex
         width: 450px;
     }
 
-    .projetos_container{
+    .projetos_container {
         justify-content: center;
         margin: auto;
     }
 
-    .blog{
+    .blog {
         /* max-width: 90%; */
         flex-direction: row-reverse;
     }
@@ -1250,10 +1279,11 @@ input[type="text"]:placeholder-shown, input[type="email"]:placeholder-shown, tex
         flex-direction: initial;
     }
 
-    .parágrafo-blog>p{
+    .parágrafo-blog>p {
         text-align: right;
         padding-right: 1.5rem;
     }
+
     .parágrafo-página-de-vendas>p {
         text-align: left;
     }
