@@ -344,6 +344,10 @@ p {
     text-align: center;
 }
 
+.educação p a abbr{
+    text-decoration: none;
+}
+
 .info_section>.tittle,
 .conteudo_habilidades .tittle {
     margin-top: 5rem;
