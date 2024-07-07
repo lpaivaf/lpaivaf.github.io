@@ -462,129 +462,138 @@ p {
     margin-bottom: 0;
 }
 
-
-
 /* Códigos alterados*/
 
 .blog,
-.página-de-vendas {
-    width: 380px;
+.página-de-vendas,
+.portifolio {
+    /* width: 380px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin: 0 auto;
-    /* gap: 1.5rem; */
-    /* backdrop-filter: blur(30px); */
-    /* box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37); */
-    /* border: 2px solid rgba(225, 225, 225, 0.18); */
-    /* padding: 2rem; */
-    /* border-radius: 10px; */
+    margin: 0;
 }
 
-/* .página-de-vendas {
-    flex-direction: row-reverse;
-} */
 
-.blog a img,
-.página-de-vendas a img {
-    width: 380px;
-    filter: drop-shadow(0 0 2px #ccc);
-    /* margin-bottom: 1.5rem; */
-}
-
-.blog a:nth-child(2) {
+.blog a:nth-child(2),
+.página-de-vendas a:nth-child(2),
+.portifolio a:nth-child(2) {
     display: none;
 }
 
-.página-de-vendas a:nth-child(2) {
-    display: none;
+.tecnologias {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 0;
 }
 
-
-/* .imagem_blog>a img,
-.imagem_página-de-vendas>a img {
+.tecnologias-container {
     width: 80%;
-} */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    gap: .5rem;
+}
+
+.tecnologias div>p {
+    margin: 0;
+    width: 5rem;
+    padding: .1rem 0;
+    font-size: .8rem;
+}
+
+.tecnologias .html {
+    background-color: rgb(190, 71, 34);
+    border-radius: 2px;
+}
+
+.tecnologias .css {
+    background-color: rgb(28, 77, 168);
+    border-radius: 2px;
+}
+
+.tecnologias .j-script {
+    background-color: rgb(214, 183, 7);
+    border-radius: 2px;
+    color: black;
+}
 
 .blog p,
-.página-de-vendas p {
+.página-de-vendas p,
+.portifolio p {
     width: 100%;
-    /* text-align: center; */
     font-size: 1.2rem;
-    /* line-height: 1rem; */
 }
 
-/* .página-de-vendas p {
-    text-align: right;
-} */
-
 .parágrafo-blog,
-.parágrafo-página-de-vendas {
+.parágrafo-página-de-vendas,
+.parágrafo-portifolio {
     display: flex;
-    /* flex-direction: row; */
 }
 
 .parágrafo-blog p:nth-child(1),
-.parágrafo-página-de-vendas p:nth-child(1) {
-    margin-top: 2rem;
+.parágrafo-página-de-vendas p:nth-child(1),
+.parágrafo-portifolio p:nth-child(1) {
+    margin-top: .5rem;
 }
 
 .parágrafo-blog p:nth-child(2),
-.parágrafo-página-de-vendas p:nth-child(2) {
+.parágrafo-página-de-vendas p:nth-child(2),
+.parágrafo-portifolio p:nth-child(2) {
     margin-bottom: 0;
 }
 
 .blog p>strong,
-.página-de-vendas p>strong {
+.página-de-vendas p>strong,
+.portifolio p>strong {
     font-size: 1.2rem;
     margin-bottom: 0;
 }
 
 /*Slides*/
 
-.projetos_conteudo {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* row-gap: 3rem; */
-}
-
 .slider {
     margin: 0 auto;
     width: 380px;
     /*Iportante delimitar a altura para esconder o próximo conteúdo*/
-    height: 280px;
+    height: 300px;
     overflow: hidden;
 }
 
 .slides {
     display: flex;
-    width: 200%;
+    width: 300%;
     /*O valor do "width" depende da quantidade de imagens que estiver usando. Se usar 5, então o width será de 500%*/
+    height:100%;
+}
+
+.slides .slide a img{
+    width: 100%;
     height: 100%;
+    filter: drop-shadow(0 0 2px #ccc);
 }
 
 .slides input {
     display: none;
 }
 
-
 .slide {
-    /* width: 380px; */
-    width: 50%;
-    /*O valor do "width" corresponde ao espaço ocupado por cada img. 100% / pela quantidade de imagens do projeto.  Se usar 5, então o width será de 20%*/
+    width: 33.33%; 
+    /*O valor do "width" corresponde ao espaço ocupado por cada img. 100% / pela quantidade de imagens do projeto.  Se usar 3, então o width será de 33.33%*/
     position: relative;
     transition: 1s;
 }
 
 .slide img {
-    width: 100%;
+    width: 1240px;
     height: 100%;
 }
 
 .manual-navigation {
     position: absolute;
-    width: 960px;
+    width: 380px;
     margin-top: 440px;
     display: flex;
     justify-content: center;
@@ -597,7 +606,6 @@ p {
     border-radius: 50%;
     cursor: pointer;
     transition: .5s ease-in-out;
-
 }
 
 .manual-btn:not(:last-child) {
@@ -613,42 +621,12 @@ p {
 }
 
 #radio2:checked~.first {
-    margin-left: -100%;
-    /* margin-left: -33.33%; */
+    margin-left: -33.33%;
 }
 
 #radio3:checked~.first {
-    /* margin-left: -66.66%; */
+    margin-left: -66.66%;
 }
-
-
-/* .auto-navigation{
-    position: absolute;
-    width: 200px ;
-    margin-top: -20px;
-    display: flex;
-    justify-content: center;
-} */
-
-
-/*.auto-navigation div{
-    border: 2px solid red;
-    padding: 5px;
-    border-radius: 50%;
-    cursor: pointer;
-} */
-
-/* .auto-navigation div:not(:last-child){
-    margin-right: 1.5rem;
-} */
-
-/* #radio1:checked ~ .auto-navigation .auto-btn1{
-    background-color: white;
-} */
-
-/* #radio2:checked ~ .auto-navigation .auto-btn2{
-    background-color: white;
-} */
 
 
 .tittle_projetos,
@@ -662,12 +640,7 @@ p {
     margin-top: 5rem;
 }
 
-.projeto_página-de-vendas {
-    /* margin-top: 3rem; */
-}
-
-/* Fim dos códigos alterados*/
-
+/* Fim das alterações do códigos*/
 
 .contato_container {
     flex-direction: column;
@@ -996,40 +969,24 @@ textarea:placeholder-shown {
 
     /* Trechos do código alterados*/
 
-    .blog,
-    .página-de-vendas {
-        width: 450px;
-    }
-
     .blog a img,
-    .página-de-vendas a img {
+    .página-de-vendas a img,
+    .portifolio a img {
         width: 450px;
-    }
-
-    .imagem_blog a:nth-child(1),
-    .imagem_página-de-vendas a:nth-child(1) {
-        display: none;
-    }
-
-    .imagem_blog a:nth-child(2),
-    .imagem_página-de-vendas a:nth-child(2) {
-        display: block;
     }
 
     .blog p,
     .blog p>strong,
     .página-de-vendas p,
-    .página-de-vendas p>strong {
-        font-size: 1.5rem;
+    .página-de-vendas p>strong,
+    .portifolio p,
+    .portifolio p>strong {
+        font-size: 1.3rem;
     }
 
     .slider {
         width: 450px;
-        height: 280px;
-    }
-
-    .slides {
-        width: 450px;
+        height: 320px;
     }
 
     .slide {
@@ -1037,11 +994,10 @@ textarea:placeholder-shown {
     }
 
     .slide img {
-        width: 900px;
+        width: 1350px;
     }
 
     .manual-navigation {
-        width: 900px;
         margin-top: 475px;
     }
 
@@ -1156,24 +1112,21 @@ textarea:placeholder-shown {
     /* Trecho do códigos alterados*/
 
     .blog a:nth-child(2),
-    .página-de-vendas a:nth-child(2) {
+    .página-de-vendas a:nth-child(2),
+    .portifolio a:nth-child(2) {
         display: none;
     }
 
 
     .blog a img,
-    .página-de-vendas a img {
+    .página-de-vendas a img,
+    .portifolio a img {
         width: 560px;
     }
 
     .slider {
         width: 560px;
-        /*Iportante delimitar a altura para esconder o próximo conteúdo*/
-        height: 320px;
-    }
-
-    .slides {
-        width: 560px;
+        height: 400px;
     }
 
     .slide {
@@ -1186,10 +1139,16 @@ textarea:placeholder-shown {
 
     .manual-navigation {
         width: 1020px;
-        margin-top: 500px;
+        margin-top: 530px;
     }
 
-    /* Fim do códigos alterados*/
+    .parágrafo-blog p:nth-child(1),
+.parágrafo-página-de-vendas p:nth-child(1),
+.parágrafo-portifolio p:nth-child(1) {
+    margin-top: 1rem;
+}
+
+    /* Fim da alterção de códigos*/
 
     .contato_container {
         flex-direction: row;
@@ -1368,12 +1327,12 @@ textarea:placeholder-shown {
     /* Trecho do códigos alterados*/
 
     .blog a:nth-child(1),
-    .página-de-vendas a:nth-child(1) {
+    .página-de-vendas a:nth-child(1), .portifolio a:nth-child(1){
         display: none;
     }
 
     .blog a:nth-child(2),
-    .página-de-vendas a:nth-child(2) {
+    .página-de-vendas a:nth-child(2), .portifolio a:nth-child(2) {
         display: block;
     }
 
@@ -1392,31 +1351,29 @@ textarea:placeholder-shown {
         width: 500px;
     }
 
-    .blog p, .blog p>strong ,
-    .página-de-vendas p, .página-de-vendas p>strong {
+    .blog p,
+    .blog p>strong,
+    .página-de-vendas p,
+    .página-de-vendas p>strong {
         font-size: 1.5rem;
     }
 
     .slider {
         width: 500px;
-        height: 400px;
+        height: 450px;
     }
-    
-    .slides {
-        width: 500px;
-    }    
-    
+
     .slide {
         width: 500px;
     }
-    
+
     .slide img {
         width: 1000px;
     }
-    
+
     .manual-navigation {
         width: 1020px;
-        margin-top: 600px;
+        margin-top: 630px;
     }
 }
 
