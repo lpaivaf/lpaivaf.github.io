@@ -159,46 +159,73 @@
                 </section>
             </section>
 
+            <!-- /* Trecho de códigos alterados*/ -->
+
             <article id="projetos" class="projetos">
-                <section class="projetos_container">
+                <div class="projetos_container">
                     <div class="tittle_projetos">
                         <h2>Projetos <span>Recentes</span></h2>
                     </div>
-                    <div class="projetos_conteudo">
-                        <div class="projeto_blog">
-                            <div class="blog">
-                                <div class="imagem_blog">
-                                    <a href="https://lpaivaf.github.io/Blog-Post-SensiBeauty/" target="_blank"><img src="img/cel-Sensi.png" alt="Imagem do projeto do Blog Post, vista em imagem de celuler"></a>
-                                    <a href="https://lpaivaf.github.io/Blog-Post-SensiBeauty/" target="_blank"><img src="img/tablet-Sensi.png" alt="Imagem do projeto do Blog Post vista em imagem de tablet"></a>
-                                    <a href="https://lpaivaf.github.io/Blog-Post-SensiBeauty/" target="_blank"><img src="img/leptop-Sensi2.png" alt="Imagem do projeto do Blog Post vista em imagem de um leptop"></a>
-                                </div>
+                    <div class="slider">
+                        <!-- radio btn -->
+                        <div class="slides">
+                            <input type="radio" name="radio-btn" id="radio1" checked>
+                            <!--O primeiro input sempre iniciará "checked"-->
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <!-- <input type="radio" name="radio-btn" id="radio3"> -->
+                            <!-- radio btn -->
+
+                            <div class="blog slide first">
+
+                                <a href="#"><img src="img/Sensi-dispositivos.png"
+                                        alt="Imagem do projeto do Blog Post, vista em imagem de celuler"></a>
+                                <a href="#"><img src="img/leptop-Sensi2.png"
+                                        alt="Imagem do projeto do Blog Post vista em imagem de um leptop"></a>
+                                <!-- <a href="#"><img src=""
+                                        alt="Imagem do projeto do X vista em "></a>   -->
+
+
                                 <div class="parágrafo-blog">
-                                    <p>( <i>Projeto pessoal</i> )</p>
-                                    <p><strong>SensiBeauty</strong></p>
-                                    <p>Projeto de um blog de beleza, com o objetivo de divulgar produtos e serviços do
-                                        setor.</p>
+                                    <p><strong>SensiBeauty Blog</strong> ( <i>Projeto pessoal</i> )</p>
                                 </div>
                             </div>
+
+
+                            <div class="página-de-vendas slide">
+
+                                <a href="#"><img src="img/LandingPage-dispositivos.png"
+                                        alt="Imagem do projeto da landing page, vista em imagem de celuler"></a>
+                                    <a href="#"><img src="img/leptop-Excel2.png"
+                                        alt="Imagem do projeto da landing page, vista em imagem de um leptop"></a>
+                                        <!-- <a href="#"><img src=""
+                                        alt="Imagem do projeto  X"></a>-->
+
+                                <div class="parágrafo-página-de-vendas">
+                                    <p><Strong>Landing Page</Strong> ( <i>Projeto pessoal</i> )</p>
+
+                                </div>
+                            </div>
+
                         </div>
 
-                        <div class="projeto_página-de-vendas">
-                            <div class="página-de-vendas">
-                                <div class="imagem_página-de-vendas">
-                                    <a href="https://lpaivaf.github.io/Landing-Page-ExcelCourse/" target="_blank"><img src="img/cel-Excel.png" alt="Imagem do projeto da landing page, vista em imagem de celuler"></a>
-                                    <a href="https://lpaivaf.github.io/Landing-Page-ExcelCourse/" target="_blank"><img src="img/tablet-Excel.png" alt="Imagem do projeto da landing page, vista em imagem de tablet"></a>
-                                    <a href="https://lpaivaf.github.io/Landing-Page-ExcelCourse/" target="_blank"><img src="img/leptop-Excel2.png" alt="Imagem do projeto da landing page, vista em imagem de um leptop"></a>
-                                </div>
-                                <div class="parágrafo-página-de-vendas">
-                                    <p>( <i>Projeto pessoal</i> )</p>
-                                    <p><Strong>Digicursos</Strong></p>
-                                    <p>Projeto de uma página de vendas, com o objetivo de transformar leads em
-                                        potenciais clientes.</p>
-                                </div>
-                            </div>
-                        </div>
+                        <!--Navegação-auto-->
+                        <!-- <div class="auto-navigation">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                        </div> -->
                     </div>
-                </section>
+
+                    <!--Navegação manual-->
+                    <div class="manual-navigation">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <!-- <label for="radio3" class="manual-btn"></label> -->
+                    </div>
+                </div>
             </article>
+
+            <!-- /* Fim do códigos alterados*/ -->
 
             <section id="contato" class="contato">
                 <section class="contato_container">
@@ -238,17 +265,7 @@
     </footer>
 </body>
 
-<script>
-
-
-// javascript em desenvolvimento
-
-    /* function enviarwhatsapp() {
-    let nome = document.querySelector('input[name="name"]').value;
-    let email = document.querySelector('input[name="email"]').value;
-    let mensagem = document.querySelector('textarea[name="mensage"]').value;
-}*/
-
-</script>
+<!-- /* Trecho de códigos  JS alterados*/ -->
+<script src="./JS/index.js"></script>
 
 </html>
