@@ -22,6 +22,7 @@ body {
     width: 100vw;
     background-color: var(--primary-color);
     color: #ccc;
+overflow-x: hidden;
 }
 
 body p {
