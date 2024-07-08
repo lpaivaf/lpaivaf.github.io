@@ -22,6 +22,7 @@ body {
     width: 100vw;
     background-color: var(--primary-color);
     color: #ccc;
+    overflow-x: hidden;
 }
 
 body p {
@@ -464,6 +465,22 @@ p {
 
 /* Códigos alterados*/
 
+.tittle_projetos {
+    margin-top: 5rem;
+}
+
+.tittle_projetos h2>span, .contato_texto h2{
+    color: var(--tertiary-color);
+}
+
+.tittle_projetos,
+.contato_texto {
+    width: 100%;
+    text-align: left;
+    margin: 3rem 0;
+}
+
+
 .blog,
 .página-de-vendas,
 .portifolio {
@@ -484,7 +501,7 @@ p {
 
 .tecnologias {
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 1.3rem;
     margin-bottom: 0;
 }
 
@@ -500,7 +517,7 @@ p {
 .tecnologias div>p {
     margin: 0;
     width: 5rem;
-    padding: .1rem 0;
+    padding: .05rem 0;
     font-size: .8rem;
 }
 
@@ -536,7 +553,7 @@ p {
 .parágrafo-blog p:nth-child(1),
 .parágrafo-página-de-vendas p:nth-child(1),
 .parágrafo-portifolio p:nth-child(1) {
-    margin-top: .5rem;
+    margin-top: 1rem;
 }
 
 .parágrafo-blog p:nth-child(2),
@@ -545,10 +562,10 @@ p {
     margin-bottom: 0;
 }
 
-.blog p>strong,
-.página-de-vendas p>strong,
-.portifolio p>strong {
-    font-size: 1.2rem;
+.blog p,
+.página-de-vendas p,
+.portifolio p {
+    font-size: 1rem;
     margin-bottom: 0;
 }
 
@@ -556,7 +573,7 @@ p {
 
 .slider {
     margin: 0 auto;
-    width: 380px;
+    width: 300px;
     /*Iportante delimitar a altura para esconder o próximo conteúdo*/
     height: 300px;
     overflow: hidden;
@@ -566,10 +583,10 @@ p {
     display: flex;
     width: 300%;
     /*O valor do "width" depende da quantidade de imagens que estiver usando. Se usar 5, então o width será de 500%*/
-    height:100%;
+    height: 100%;
 }
 
-.slides .slide a img{
+.slides .slide a img {
     width: 100%;
     height: 100%;
     filter: drop-shadow(0 0 2px #ccc);
@@ -580,21 +597,21 @@ p {
 }
 
 .slide {
-    width: 33.33%; 
+    width: 33.33%;
     /*O valor do "width" corresponde ao espaço ocupado por cada img. 100% / pela quantidade de imagens do projeto.  Se usar 3, então o width será de 33.33%*/
     position: relative;
-    transition: 1s;
+    transition: 1.5s ease-in-out;
 }
 
 .slide img {
-    width: 1240px;
+    width: 900px;
     height: 100%;
 }
 
 .manual-navigation {
     position: absolute;
-    width: 380px;
-    margin-top: 440px;
+    width: 300px;
+    margin-top: 420px;
     display: flex;
     justify-content: center;
 }
@@ -626,18 +643,6 @@ p {
 
 #radio3:checked~.first {
     margin-left: -66.66%;
-}
-
-
-.tittle_projetos,
-.contato_texto {
-    width: 100%;
-    text-align: left;
-    margin: 3rem 0;
-}
-
-.tittle_projetos {
-    margin-top: 5rem;
 }
 
 /* Fim das alterações do códigos*/
@@ -972,7 +977,7 @@ textarea:placeholder-shown {
     .blog a img,
     .página-de-vendas a img,
     .portifolio a img {
-        width: 450px;
+        width: 400px;
     }
 
     .blog p,
@@ -985,20 +990,20 @@ textarea:placeholder-shown {
     }
 
     .slider {
-        width: 450px;
+        width: 400px;
         height: 320px;
     }
 
     .slide {
-        width: 450px;
+        width: 400px;
     }
 
     .slide img {
-        width: 1350px;
+        width: 1200px;
     }
 
     .manual-navigation {
-        margin-top: 475px;
+        margin-top: 450px;
     }
 
     .footer_content p {
@@ -1116,12 +1121,26 @@ textarea:placeholder-shown {
     .portifolio a:nth-child(2) {
         display: none;
     }
-
+    
+    .blog p,
+    .blog p>strong,
+    .página-de-vendas p,
+    .página-de-vendas p>strong,
+    .portifolio p,
+    .portifolio p>strong {
+        font-size: 1.5rem;
+    }
 
     .blog a img,
     .página-de-vendas a img,
     .portifolio a img {
         width: 560px;
+    }
+
+    .tecnologias div>p {
+        width: 6rem;
+        padding: .1rem 0;
+        font-size: 1rem;
     }
 
     .slider {
@@ -1138,15 +1157,14 @@ textarea:placeholder-shown {
     }
 
     .manual-navigation {
-        width: 1020px;
         margin-top: 530px;
     }
 
     .parágrafo-blog p:nth-child(1),
-.parágrafo-página-de-vendas p:nth-child(1),
-.parágrafo-portifolio p:nth-child(1) {
-    margin-top: 1rem;
-}
+    .parágrafo-página-de-vendas p:nth-child(1),
+    .parágrafo-portifolio p:nth-child(1) {
+        margin-top: 1rem;
+    }
 
     /* Fim da alterção de códigos*/
 
@@ -1327,12 +1345,14 @@ textarea:placeholder-shown {
     /* Trecho do códigos alterados*/
 
     .blog a:nth-child(1),
-    .página-de-vendas a:nth-child(1), .portifolio a:nth-child(1){
+    .página-de-vendas a:nth-child(1),
+    .portifolio a:nth-child(1) {
         display: none;
     }
 
     .blog a:nth-child(2),
-    .página-de-vendas a:nth-child(2), .portifolio a:nth-child(2) {
+    .página-de-vendas a:nth-child(2),
+    .portifolio a:nth-child(2) {
         display: block;
     }
 
@@ -1372,8 +1392,7 @@ textarea:placeholder-shown {
     }
 
     .manual-navigation {
-        width: 1020px;
-        margin-top: 630px;
+        margin-top: 620px;
     }
 }
 
