@@ -14,6 +14,7 @@
     --bullet-color: rgb(248, 248, 248);
     --switch-bg: rgb(25 25 25);
     --tecText-color: rgb(248 248 248);
+    --menu_aside: rgb(63, 62, 62);
 }
 
 /* Alteração dos valores das variáveis para o lightMode */
@@ -30,6 +31,7 @@
     --bullet-color: rgb(248, 248, 248);
     --switch-bg: rgb(248 248 248);
     --tecText-color: rgb(248 248 248);
+    --menu_aside: rgb(238, 237, 237);
 }
 
 * {
@@ -191,18 +193,34 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    row-gap: .5rem;
+    /* row-gap: .5rem; */
     font-size: 1rem;
     text-align: left;
     margin-bottom: 1rem;
 }
 
-.container_aside_menu label:hover,
-.main_container_aside_menu label:hover,
+.menu_aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: .3rem;
+    color: var(--txt);
+    /* font-weight: 300; */
+}
+
+.menu_aside .icon {
+    align-content: center;
+}
+
+/* .container_aside_menu label:hover,
+.main_container_aside_menu label:hover, */
+
 .nav_container label:hover {
     color: rgb(79, 79, 228);
     cursor: pointer;
 }
+
 
 .contatos {
     width: 100%;
@@ -551,7 +569,6 @@ body {
     background-color: rgb(194, 165, 0);
 }
 
-
 /*Curriculo*/
 
 .curriculo {
@@ -833,6 +850,105 @@ body {
         font-size: 1.3rem;
     }
 
+    /* Alteração novo elemento  */
+    .container_aside_menu,
+    .main_container_aside_menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #1b1b1b; */
+        margin: 1rem 0;
+        border-radius: 8px;
+        width: 280px;
+        height: 2.5rem;
+        position: relative;
+    }
+
+    .container_aside_menu .cv i {
+        padding: 0;
+        margin: 0;
+        content: normal;
+    }
+
+    .menu_aside .icon {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        /* display: none; */
+        /* justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: auto; */
+        width: 2.5rem;
+        /* aspect-ratio: .8; */
+        height: 2.5rem;
+        font-size: 1.5rem;
+        transform: translateY(-24px);
+    }
+
+    .menu_aside .icon span {
+        padding: .4rem .5rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+        margin: auto;
+
+        border-radius: 50%;
+        background-color: #f5f5f5;
+        color: #1b1b1b;
+        border: 2px solid var(--border-color);
+
+    }
+
+    .menu_aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 6rem;
+        color: var(--txt);
+        padding: 0;
+    }
+
+    .menu_aside:hover {
+        background-color: none;
+    }
+
+    .menu_aside label {
+        width: 100%;
+        height: 3rem;
+        text-align: center;
+        align-content: center;
+
+    }
+
+    .menu_aside:hover label {
+        cursor: pointer;
+        font-size: .8rem;
+        transform: translateY(10px);
+        transition: .3s ease-in-out;
+    }
+
+    .menu_aside:hover .icon {
+        opacity: 1;
+        visibility: visible;
+        transition: .8s ease-in-out;
+
+    }
+
+
+    /* add alteração */
+    .main_container_aside_menu {
+        margin: 2rem auto;
+        width: 250px;
+        /* background-color: var(--aside-bg); */
+        padding: .5rem 1rem;
+        border-radius: 5px;
+    }
+
+    /* 
     .container_aside_menu,
     .main_container_aside_menu {
         display: flex;
@@ -841,7 +957,7 @@ body {
         margin-bottom: 2rem;
         width: 80%;
         font-size: 1.1rem;
-    }
+    } */
 
     .contatos {
         display: flex;
@@ -987,14 +1103,6 @@ body {
         }
     }
 
-    .main_container_aside_menu {
-        margin: 2rem auto;
-        width: 250px;
-        background-color: var(--aside-bg);
-        padding: .5rem 1rem;
-        border-radius: 5px;
-    }
-
     /*Projetos*/
 
     .projetos h2 {
@@ -1056,7 +1164,7 @@ body {
     }
 
     .curriculo_main {
-        text-align: justify;
+        /* text-align: justify; */
     }
 
     .footer {
@@ -1170,6 +1278,12 @@ body {
     .foto_capa img {
         width: 7rem;
         border-radius: 50%;
+    }
+
+    /* add alteração */
+    .menu_aside:hover {
+        background-color: var(--menu_aside);
+        border-radius: 5px;
     }
 
     .health-fitness-calc,

@@ -79,11 +79,8 @@ document.querySelectorAll('.input').forEach(button => {
 
 
 // Whatsapp mensage
-
-function enviarwhatsapp() {
-    const numerodetelefone = "+351920305354";
-    var url = "https://web.whatsapp.com/" + numerodetelefone + "*Contato - GitHub*";
+function enviarwhatsapp(){
+    const url = "https://wa.me/920305354?text=*Contato%20GitHub*";
     window.open(url, '_blank').focus();
 }
-
 
