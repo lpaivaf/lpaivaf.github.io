@@ -324,9 +324,14 @@ body {
 }
 
 .sobre_mim>p a,
-.sobre_mim>p a abbr {
+.sobre_mim>p a abbr{
     text-decoration: none;
     color: var(--txt);
+}
+
+.link-linkedin{
+    color: var(--bullet-color);
+    text-decoration: none;
 }
 
 .sobre_mim>p a span {
@@ -668,6 +673,10 @@ body {
 .dados_pessoais h5 {
     margin: 1rem 0 .5rem;
     font-size: 1rem;
+}
+
+.dados_pessoais a{
+    text-decoration: none;
 }
 
 .competencias,
