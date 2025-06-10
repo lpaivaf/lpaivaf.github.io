@@ -581,16 +581,28 @@ body {
 /*Curriculo*/
 
 .curriculo {
+    color: #191919;
     border: 1px solid var(--border-color);
     border-radius: 5px;
     margin: 1rem 0;
-    padding: 1rem;
+    padding: 2rem;
 }
 
-.corriculo_container {
-    border: 2px solid #545454;
+.curriculo a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.corriculo_container, .curriculo_content {
+    border: 1px solid var(--border-color);
     border-radius: 5px;
     margin: 2rem 0;
+}
+
+.curriculo_content{
+    background-color: #f7f7f7;
+    padding: 2rem;
+    line-height: 1.5rem;    
 }
 
 .download {
@@ -617,162 +629,39 @@ body {
     border-right: 15px solid rgb(218, 52, 10);
 }
 
-.curriculo_top h2 {
-    font-size: 3rem;
-    margin: 0;
+.nome_cv {
+    font-size: 2rem;
+    margin-bottom: .5rem ;
 }
 
-.curriculo_content {
-    display: flex;
-    padding: 1rem;
+.endereco{
+    margin-bottom: .5rem;
 }
 
-.curriculo_dados {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 2rem 1.5rem;
-    background-color: rgb(44, 44, 44);
-    color: rgba(248 248 248);
-}
-
-.curriculo_img {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.curriculo_img img {
-    width: 150px;
-    border-radius: 50%;
-    margin: 0 0 2rem;
-}
-
-.curriculo_main {
-    display: flex;
-    flex-direction: column;
-    padding: 2.5rem 1.5rem;
-    background-color: #e9e9e9;
-    color: rgba(25 25 25);
-}
-
-.curriculo_line {
-    width: 100%;
-    border-bottom: 1px solid rgba(25 25 25);
-    margin: 1.5rem auto;
-}
-
-.competencias h2,
-.caracteristicas h2,
+.curriculo_container h1,
+.sobre_cv h2,
+.competencias_cv h2,
+.formacao h2,
+.cursos_certificacao h2,
+.periodicos h2,
 .idiomas h2 {
-    margin: 1.5rem 0 1rem;
-}
-
-.dados_pessoais h5 {
-    margin: 1rem 0 .5rem;
-    font-size: 1rem;
-}
-
-.dados_pessoais a{
-    text-decoration: none;
-}
-
-.competencias,
-.caracteristicas,
-.idiomas {
-    display: flex;
-    flex-direction: column;
-    row-gap: .5rem;
-}
-
-.competencias_lista,
-.competencias_itens {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.competencias_lista div {
-    width: max-content;
-}
-
-.competencias_lista span,
-.competencias_itens span {
-    display: flex;
-    column-gap: .5rem;
-}
-
-.competencias_lista span div,
-.competencias_itens span div {
-    width: .8rem;
-    height: .8rem;
-    border: 1px solid white;
-    border-radius: 50%;
-}
-
-.organização_item div:not(:nth-child(5)) {
-    background-color: var(--bullet-color);
-}
-
-.criatividade_item div:not(:nth-child(5)) {
-    background-color: var(--bullet-color);
-}
-
-.compromico_item div {
-    background-color: var(--bullet-color);
-}
-
-.resolucaoDeProblemas_item div:not(:nth-child(5)) {
-    background-color: var(--bullet-color);
-}
-
-.comunicacao_item div:not(:nth-child(5)) {
-    background-color: var(--bullet-color);
-}
-
-.ingles_item div:nth-child(1),
-.ingles_item div:nth-child(2) {
-    background-color: var(--bullet-color);
-}
-
-.ingles_item div:nth-child(3) {
-    background-image: linear-gradient(to left, rgb(44 44 44) 70%, rgb(248, 248, 248) 30%);
-}
-
-.curriculo_main h2 {
+    color: #005A9C;
     margin-bottom: 1rem;
 }
 
-.curriculo_main ul li {
-    margin: .5rem 0 .5rem 2rem;
+article section {
+    margin-bottom: 2rem;
 }
 
-.curriculo_main .experiencia+.experiencia {
-    margin-top: 1rem;
+article ul {
+    padding-left: 1.2rem;
 }
 
-.extperiencia_title,
-.formacao_title,
-.certificacoes_title {
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem 0 .5rem;
+article hr {
+    border: none;
+    border-top: 2px solid #ccc;
+    margin: 2rem 0;
 }
-
-.formacao_title,
-.certificacoes_title {
-    flex-wrap: wrap;
-}
-
-.periodicos {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.5rem;
-}
-
 
 /*footer*/
 
@@ -1156,6 +1045,7 @@ body {
 
     .curriculo_content {
         flex-direction: column;
+        margin: 2rem 1rem 4rem 1rem;
     }
 
     .corriculo_container {
@@ -1289,7 +1179,7 @@ body {
         height: 250px;
     }
 
-    /*tive que recalcular o position do main, pois de alguma maneira não respeitava mais sua posição inicial. Fazer uma refatoração posrteriormente para encontrar o problema*/
+    /*tive que recalcular o position do main, pois de alguma maneira não respeitava mais sua posição inicial. Fazer uma refatoração posteriormente para encontrar o problema*/
     .container_main {
         grid-area: main;
         width: calc(100% - 300px);
