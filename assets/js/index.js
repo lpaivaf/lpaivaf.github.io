@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-//Tamas - dark e light mode
+//Temas - dark e light mode
 
 document.addEventListener('DOMContentLoaded', function () {
     const html = document.documentElement;

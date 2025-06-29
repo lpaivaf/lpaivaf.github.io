@@ -599,10 +599,22 @@ body {
     margin: 2rem 0;
 }
 
-.curriculo_content{
-    background-color: #f7f7f7;
-    padding: 2rem;
-    line-height: 1.5rem;    
+.download a {
+    text-decoration: none;
+    background-color: rgba(255, 2, 2, 0.623);
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border-left: 18px solid  rgb(255, 0, 0);
+    border-right: 18px solid  rgb(168, 1, 1);
+    color: var(--txt-btn);
+    font-size: 1.1rem;
+    margin-right: 1rem;
+}
+
+.download a:hover {
+    background-color: rgb(255, 0, 0);
+    transition: all .2s ease-in-out;
+    border-right: 18px solid  rgb(255, 0, 0);
 }
 
 .download {
@@ -611,56 +623,123 @@ body {
     text-align: right;
 }
 
-.download a {
+.curriculo_content{
+    background-color: #f7f7f7;
+    padding: 2rem;
+    line-height: 1.5rem;    
+}
+
+.curriculo_content {
+    display: flex;
+    padding: 1rem;
+}
+
+.curriculo_content h2{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background-color: #d6d6d6;
+    padding: .5rem;
+}
+
+.curriculo_top h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.curriculo_dados {
+    display: flex;
+    width: 110rem;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    /* background-color: rgb(44, 44, 44); */
+    color: rgba(248 248 248);
+}
+
+.curriculo_img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.curriculo_img img {
+    width: 180px;
+    border-radius: 50%;
+    margin: 2rem;
+}
+
+.curriculo_main {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 1.5rem;
+    line-height: 1.5rem;
+    /* background-color: #e9e9e9; */
+    color: rgba(25 25 25);
+}
+
+.curriculo_line {
+    width: 100%;
+    border-bottom: 1px solid rgba(25 25 25);
+    margin: 1.5rem auto;
+}
+
+.competencias h2{
+    margin: 1.5rem 0 1rem;
+}
+
+.dados_content{
+    background-color: rgb(44, 44, 44);
+}
+
+.dados_content h1{
+font-size: 2rem;
+margin-bottom: 1rem;
+text-align: center;
+}
+
+.dados_pessoais{
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+
+}
+
+.dados_pessoais a {
     text-decoration: none;
-    background-color: red;
-    padding: .5rem 1rem;
-    border-radius: 5px;
-    border-left: 15px solid rgb(218, 52, 10);
-    border-right: 15px solid red;
-    color: var(--txt-btn);
-    font-size: 1.1rem;
-    margin-right: 1rem;
+    color: white;
 }
 
-.download a:hover {
-    background-color: rgb(218, 52, 10);
-    transition: all .2s ease-in-out;
-    border-right: 15px solid rgb(218, 52, 10);
+.competencias_content{
+    color: black;
 }
 
-.nome_cv {
-    font-size: 2rem;
-    margin-bottom: .5rem ;
+.competencias,
+.caracteristicas,
+.idiomas {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
 }
 
-.endereco{
-    margin-bottom: .5rem;
+.competencias_lista, .experiencia .formacao_title {
+    line-height: 1.5rem;
 }
 
-.curriculo_container h1,
-.sobre_cv h2,
-.competencias_cv h2,
-.formacao h2,
-.cursos_certificacao h2,
-.periodicos h2,
-.idiomas h2 {
-    color: #005A9C;
+.competencias_lista ul li, .idioma_lista ul{
+    margin-left: 2rem;
+}
+
+.competencias_lista span, .sobre_profissional span, .experiencia_title span{
+    font-weight: bold;
+}
+
+.curriculo_main h2 {
     margin-bottom: 1rem;
 }
 
-article section {
-    margin-bottom: 2rem;
-}
-
-article ul {
-    padding-left: 1.2rem;
-}
-
-article hr {
-    border: none;
-    border-top: 2px solid #ccc;
-    margin: 2rem 0;
+.curriculo_main ul li {
+    margin: .5rem 0 .5rem 2rem;
 }
 
 /*footer*/
@@ -886,29 +965,12 @@ article hr {
         margin-bottom: 2rem;
     }
 
-    .sobre_mim {
-        font-size: 1rem;
-        overflow-y: auto;
-    }
+    .curriculo_dados {
+    display: flex;
+    width: 100%;
+}
 
-    .sobre_mim>p {
-        margin: 2rem 0;
-        font-size: 1.2rem;
-    }
-
-    .sobre_mim h1 {
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .sobre_mim_txt p {
-        margin-bottom: 1rem;
-        line-height: 1.5rem;
-    }
-
-    .sobre_mim div ul li {
-        margin-bottom: 1rem;
-    }
+    /*Técnologias*/
 
     .tecnologias {
         width: 100%;
