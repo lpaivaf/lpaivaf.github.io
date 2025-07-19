@@ -700,7 +700,8 @@ text-align: center;
 }
 
 .dados_pessoais{
-    text-align: center;
+    /* text-align: left; */
+    padding-left: 2.5rem;
     margin-bottom: 1rem;
     line-height: 1.5rem;
 
