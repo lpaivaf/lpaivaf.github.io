@@ -601,20 +601,21 @@ body {
 
 .download a {
     text-decoration: none;
-    background-color: rgba(255, 2, 2, 0.623);
-    padding: .5rem 1rem;
+    background-color: rgba(255, 2, 2, 0.877);
+    padding: .5rem 2rem;
     border-radius: 5px;
-    border-left: 18px solid  rgb(255, 0, 0);
-    border-right: 18px solid  rgb(168, 1, 1);
+    /* border-left: 18px solid  rgb(255, 0, 0); */
+    /* border-right: 18px solid  rgb(168, 1, 1); */
     color: var(--txt-btn);
     font-size: 1.1rem;
+    font-weight: bold;
     margin-right: 1rem;
 }
 
 .download a:hover {
     background-color: rgb(255, 0, 0);
     transition: all .2s ease-in-out;
-    border-right: 18px solid  rgb(255, 0, 0);
+    /* border-right: 18px solid  rgb(255, 0, 0); */
 }
 
 .download {
