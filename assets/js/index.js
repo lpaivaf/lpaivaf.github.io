@@ -44,11 +44,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const light_sun = document.querySelector('.light_sun');
 
     if (html.classList.contains("light")) {
-        dark_moon.style.display = 'block';
-        light_sun.style.display = 'none';
-    } else {
-        dark_moon.style.display = 'none';
         light_sun.style.display = 'block';
+        dark_moon.style.display = 'none';
+    } else {
+        light_sun.style.display = 'none';
+        dark_moon.style.display = 'block';
     }
 });
 
@@ -60,11 +60,11 @@ function toggleMode() {
     const light_sun = document.querySelector('.light_sun');
 
     if (html.classList.contains("light")) {
-        dark_moon.style.display = 'block';
-        light_sun.style.display = 'none';
-    } else {
-        dark_moon.style.display = 'none';
         light_sun.style.display = 'block';
+        dark_moon.style.display = 'none';
+    } else {
+        light_sun.style.display = 'none';
+        dark_moon.style.display = 'block';
     }
 }
 
