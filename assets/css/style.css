@@ -507,7 +507,8 @@ body {
 
 .health-fitness-calc,
 .blog,
-.landing_page {
+.landing_page, 
+.AppTestcy {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -522,21 +523,24 @@ body {
 
 .health-fitness-calc a img,
 .blog a img,
-.landing_page a img {
-    width: 42px;
+.landing_page a img, 
+.AppTestcy a img {
+    /* width: 42px; */
     filter: drop-shadow(0 0 3px white);
 }
 
 .health-fitness-calc a img:hover,
 .blog a img:hover,
-.landing_page a img:hover {
+.landing_page a img:hover,
+.AppTestcy a img:hover {
     scale: 1.3;
     transition: .5s ease-in-out;
 }
 
 .health-fitness-calc a:hover~.descricao_projetos,
 .blog a:hover~.descricao_projetos,
-.landing_page a:hover~.descricao_projetos {
+.landing_page a:hover~.descricao_projetos,
+.AppTestcy a:hover~.descricao_projetos {
     display: none;
 }
 
@@ -556,7 +560,9 @@ body {
 
 .utilizadas_tec .html,
 .utilizadas_tec .css,
-.utilizadas_tec .j-script {
+.utilizadas_tec .j-script, 
+.cy,
+.xPath {
     width: 5rem;
     text-align: center;
     padding: .3rem;
@@ -582,6 +588,16 @@ body {
 .tecnologias_utilizadas .j-script {
     background-color: rgb(194, 165, 0);
 }
+
+.tecnologias_utilizadas .cy {
+    background-color: rgb(8, 128, 44);
+}
+
+.tecnologias_utilizadas .xPath {
+    background-color: rgb(102, 5, 214);
+}
+
+
 
 /*Curriculo*/
 
@@ -1081,7 +1097,8 @@ text-align: center;
 
     .health-fitness-calc,
     .blog,
-    .landing_page {
+    .landing_page, 
+    .AppTestcy {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -1094,9 +1111,14 @@ text-align: center;
         width: 345px;
     }
 
+    .AppTestcy a img {
+        width: 246px;
+    }
+
     .health-fitness-calc a img:hover,
     .blog a img:hover,
-    .landing_page a img:hover {
+    .landing_page a img:hover,
+    .AppTestcy a img:hover {
         scale: 1.2;
         transition: .5s ease-in-out;
         justify-content: center;
@@ -1105,7 +1127,8 @@ text-align: center;
 
     .health-fitness-calc a:hover~.projeto_paragrafo p,
     .blog a:hover~.projeto_paragrafo,
-    .landing_page a:hover~.projeto_paragrafo {
+    .landing_page a:hover~.projeto_paragrafo,
+    .AppTestcy a:hover~.projeto_paragrafo {
         display: none;
     }
 
@@ -1179,6 +1202,10 @@ text-align: center;
         width: 400px;
     }
 
+    .AppTestcy a img {
+        width: 260px;
+    }
+
     .slider {
         max-width: 650px;
         flex-basis: 120px;
@@ -1246,9 +1273,15 @@ text-align: center;
 
     .health-fitness-calc,
     .blog,
-    .landing_page {
+    .landing_page,
+    .AppTestcy {
         height: 250px;
     }
+
+    .AppTestcy a img {
+        width: 280px;
+    }
+    
 
     /*tive que recalcular o position do main, pois de alguma maneira não respeitava mais sua posição inicial. Fazer uma refatoração posteriormente para encontrar o problema*/
     .container_main {
