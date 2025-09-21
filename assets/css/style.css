@@ -170,7 +170,7 @@ body {
 }
 
 .aside_title {
-    text-align: left;
+    text-align: center;
     width: 100%;
     margin-bottom: 1rem;
 }
@@ -649,17 +649,17 @@ body {
     background-color: #f7f7f7;
     padding: 2rem;
     line-height: 1.5rem;    
+    display: flex;
 }
 
 .curriculo_content {
-    display: flex;
-    padding: 1rem;
+    /* padding: 2rem; */
 }
 
 .curriculo_content h2{
     font-size: 1.2rem;
     text-transform: uppercase;
-    background-color: #d6d6d6;
+    /* background-color: #d6d6d6; */
     padding: .5rem;
 }
 
@@ -686,8 +686,9 @@ body {
 }
 
 .curriculo_img img {
-    width: 180px;
+    width: 220px;
     border-radius: 50%;
+    box-shadow: -.7rem -.4rem 0px black;
     margin: 2rem;
 }
 
@@ -711,7 +712,8 @@ body {
 }
 
 .dados_content{
-    background-color: rgb(44, 44, 44);
+    /* background-color: rgb(44, 44, 44); */
+    color: black;
 }
 
 .dados_content h1{
@@ -721,16 +723,17 @@ text-align: center;
 }
 
 .dados_pessoais{
-    text-align: center;
-    /* padding-left: 2.5rem; */
+    text-align: left;
+    padding-left: 2.5rem;
     margin-bottom: 1rem;
     line-height: 1.5rem;
+    
 
 }
 
 .dados_pessoais a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .competencias_content{
@@ -751,14 +754,18 @@ text-align: center;
 
 .competencias_lista ul li, .idioma_lista ul{
     margin-left: 2rem;
+    /* text-decoration: none; */
 }
 
 .competencias_lista span, .sobre_profissional span, .experiencia_title span{
     font-weight: bold;
 }
 
-.curriculo_main h2 {
-    margin-bottom: 1rem;
+.curriculo_main h1, h2 {
+    margin-top: 1.3rem;
+}
+.curriculo_main h3{
+    margin-top: .7rem;
 }
 
 .curriculo_main ul li {
@@ -1146,6 +1153,11 @@ text-align: center;
         margin: 0;
         padding: 0;
         border: none;
+    }
+
+    .dados_pessoais{
+    text-align: center;
+    padding-left: 0;
     }
 
     .footer {
