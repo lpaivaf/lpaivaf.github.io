@@ -650,6 +650,7 @@ body {
     width: 100%;
     padding: 1rem;
     display: flex;
+    /* flex-wrap: wrap; */
     flex-direction: column;
     justify-content: center;
     margin: 1rem auto;
@@ -664,6 +665,7 @@ body {
     gap: 32px;
     padding: 20px 0;
     max-width: 1200px;
+    height: 100%;
     margin: auto;
 }
 
@@ -692,7 +694,10 @@ body {
 .blog,
 .landing_page,
 .AppTestcy,
-.integracaoPerformance {
+.integracaoPerformance,
+.e2etest,
+.manual_tests,
+.login_test {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -706,7 +711,7 @@ body {
     background-image: linear-gradient(to top left, rgb(25, 25, 25)15%, rgb(19, 19, 19), rgb(48, 48, 48));
     border: 1px solid var(--border-color);
     border-radius: 5px;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    /* transition: box-shadow 0.3s ease, transform 0.3s ease; */
     box-sizing: border-box;
 }
 
@@ -714,7 +719,10 @@ body {
 .blog a img,
 .landing_page a img,
 .AppTestcy a img,
-.integracaoPerformance a img {
+.integracaoPerformance a img,
+.e2etest a img,
+.manual_tests a img,
+.login_test a img {
     filter: drop-shadow(0 0 3px white);
     width: 220px;
 }
@@ -723,16 +731,22 @@ body {
 .blog a img:hover,
 .landing_page a img:hover,
 .AppTestcy a img:hover,
-.integracaoPerformance a img:hover {
+.integracaoPerformance a img:hover,
+.e2etest a img:hover,
+.manual_tests a img:hover,
+.login_test a img:hover {
     scale: 1.3;
-    transition: .3s ease-in-out;
+    transition: .5s ease-in-out;
 }
 
 .health-fitness-calc a:hover~.descricao_projetos,
 .blog a:hover~.descricao_projetos,
 .landing_page a:hover~.descricao_projetos,
 .AppTestcy a:hover~.descricao_projetos,
-.integracaoPerformance a:hover~.descricao_projetos {
+.integracaoPerformance a:hover~.descricao_projetos,
+.e2etest a:hover~.descricao_projetos,
+.manual_tests a:hover~.descricao_projetos,
+.login_test a:hover~.descricao_projetos {
     display: none;
 }
 
@@ -755,7 +769,8 @@ body {
 .cy,
 .xPath,
 .jmeter,
-.grafana {
+.grafana,
+.office {
     width: max-content;
     text-align: center;
     padding: .2rem .6rem;
@@ -793,6 +808,10 @@ body {
 
 .tecnologias_utilizadas .grafana {
     background-color: rgb(141, 26, 26);
+}
+
+.tecnologias_utilizadas .office {
+    background-color: rgb(81, 115, 153);
 }
 
 
@@ -1341,13 +1360,13 @@ h2 {
         margin: 0 0 1rem;
     }
 
-    .health-fitness-calc a img,
+    /* .health-fitness-calc a img,
     .blog a img,
     .landing_page a img,
     .AppTestcy a img,
     .integracaoPerformance a img {
         width: 190px;
-    }
+    } */
 
 
     .slider {
