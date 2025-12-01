@@ -45,7 +45,7 @@
 /*Formatação do Body*/
 
 body {
-    font-family: "SUSE Mono", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -391,10 +391,10 @@ li:nth-child(2) a {
 }
 
 
-.imgSwagger,
+/* .imgSwagger,
 .imgPostman img {
     width: 2.8rem;
-}
+} */
 
 /*Slides*/
 
@@ -412,7 +412,7 @@ li:nth-child(2) a {
     text-align: center;
     animation-direction: scroll 25s linear infinite;
     -webkit-animation: scroll 25s linear infinite;
-    width: calc(3.35rem * 18);
+    width: calc(3.35rem * 26);
     height: 100%;
 }
 
@@ -438,9 +438,15 @@ li:nth-child(2) a {
     width: 3rem;
 }
 
+.slides .tools{
+   font-size: .8rem;
+}
+
 .imgSwagger,
 .imgPostman img,
 .imgCypress img,
+.imgDbeaver,
+.imgPostgresql,
 .imgMysql img,
 .imgGrafana img,
 .imgJmeter img {
@@ -460,8 +466,8 @@ li:nth-child(2) a {
     }
 
     100% {
-        -webkit-transform: translateX(calc(-3.35rem * 22));
-        transform: translateX(calc(-3.35rem * 22));
+        -webkit-transform: translateX(calc(-3.35rem * 26));
+        transform: translateX(calc(-3.35rem * 26));
     }
 }
 
@@ -1299,6 +1305,8 @@ h2 {
     .imgSwagger img,
     .imgPostman img,
     .imgCypress img,
+    .imgDbeaver,
+    .imgPostgresql,
     .imgMysql img,
     .imgGrafana img,
     .imgJmeter img {
