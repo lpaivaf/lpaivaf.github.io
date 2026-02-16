@@ -212,7 +212,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     flex-direction: row-reverse;
-    padding: .3rem;
+    padding: .3rem .8rem;
     color: var(--txt);
 }
 
@@ -316,7 +316,8 @@ body {
     border: 1px solid var(--border-color);
     padding: 1rem;
     border-radius: 5px;
-    margin-top: 1rem;
+    margin: 1rem 0;
+    /* font-size: .9rem; */
     min-height: 95vh;
 }
 
@@ -342,11 +343,6 @@ body {
 .sobre_mim h1 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-}
-
-.hand {
-    font-size: 2rem;
-    /*animar icon*/
 }
 
 .sobre_mim_txt p {
@@ -438,8 +434,8 @@ li:nth-child(2) a {
     width: 3rem;
 }
 
-.slides .tools{
-   font-size: .8rem;
+.slides .tools {
+    font-size: .8rem;
 }
 
 .imgSwagger,
@@ -473,59 +469,95 @@ li:nth-child(2) a {
 
 /*Animação*/
 
-.slides>div:nth-child(1) {
+.slides>div:nth-child(1),
+.slides>div:nth-child(14) {
     animation-name: fluter1;
+    /* animation-name: fluter14; */
     animation-duration: 1.8s;
 }
 
-.slides>div:nth-child(2) {
+.slides>div:nth-child(2),
+.slides>div:nth-child(15) {
     animation-name: fluter2;
+    /* animation-name: fluter15; */
     animation-duration: 1.5s;
 }
 
-.slides>div:nth-child(3) {
+.slides>div:nth-child(3),
+.slides>div:nth-child(16) {
     animation-name: fluter3;
+    /* animation-name: fluter16; */
     animation-duration: 2s;
 }
 
-.slides>div:nth-child(4) {
+.slides>div:nth-child(4),
+.slides>div:nth-child(17) {
     animation-name: fluter4;
+    /* animation-name: fluter17; */
     animation-duration: 1.1s;
 }
 
-.slides>div:nth-child(5) {
+.slides>div:nth-child(5),
+.slides>div:nth-child(18) {
     animation-name: fluter5;
+    /* animation-name: fluter18; */
     animation-duration: 1.7s;
 }
 
-.slides>div:nth-child(6) {
+.slides>div:nth-child(6),
+.slides>div:nth-child(19) {
     animation-name: fluter6;
+    /* animation-name: fluter19; */
     animation-duration: 1.9s;
 }
 
-.slides>div:nth-child(7) {
+.slides>div:nth-child(7),
+.slides>div:nth-child(20) {
     animation-name: fluter7;
+    /* animation-name: fluter20; */
     animation-duration: 1.2s;
 }
 
-.slides>div:nth-child(8) {
+.slides>div:nth-child(8),
+.slides>div:nth-child(21) {
     animation-name: fluter8;
+    /* animation-name: fluter21; */
     animation-duration: 1.6s;
 }
 
-.slides>div:nth-child(9) {
+.slides>div:nth-child(9),
+.slides>div:nth-child(22) {
     animation-name: fluter9;
+    /* animation-name: fluter22; */
     animation-duration: 1.4s;
 }
 
-.slides>div:nth-child(10) {
+.slides>div:nth-child(10),
+.slides>div:nth-child(23) {
     animation-name: fluter10;
+    /* animation-name: fluter23; */
     animation-duration: 2s;
 }
 
-.slides>div:nth-child(11) {
+.slides>div:nth-child(11),
+.slides>div:nth-child(24) {
     animation-name: fluter11;
+    /* animation-name: fluter24; */
     animation-duration: 1.7s;
+}
+
+.slides>div:nth-child(12),
+.slides>div:nth-child(25) {
+    animation-name: fluter11;
+    /* animation-name: fluter25; */
+    animation-duration: 1.1s;
+}
+
+.slides>div:nth-child(13),
+.slides>div:nth-child(26) {
+    animation-name: fluter11;
+    /* animation-name: fluter26; */
+    animation-duration: 1.5s;
 }
 
 .slides>div:nth-child(1),
@@ -538,7 +570,22 @@ li:nth-child(2) a {
 .slides>div:nth-child(8),
 .slides>div:nth-child(9),
 .slides>div:nth-child(10),
-.slides>div:nth-child(11) {
+.slides>div:nth-child(11),
+.slides>div:nth-child(12),
+.slides>div:nth-child(13),
+.slides>div:nth-child(14),
+.slides>div:nth-child(15),
+.slides>div:nth-child(16),
+.slides>div:nth-child(17),
+.slides>div:nth-child(18),
+.slides>div:nth-child(19),
+.slides>div:nth-child(20),
+.slides>div:nth-child(21),
+.slides>div:nth-child(22),
+.slides>div:nth-child(23),
+.slides>div:nth-child(24),
+.slides>div:nth-child(25),
+.slides>div:nth-child(26) {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: alternate;
@@ -653,6 +700,26 @@ li:nth-child(2) a {
 
     100% {
         transform: translateX(3px);
+    }
+}
+
+@keyframes fluter12 {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes fluter13 {
+    0% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(-3px);
     }
 }
 
@@ -1429,76 +1496,85 @@ h2 {
         margin: auto;
     }
 
-    @keyframes scroll {
+    /* @keyframes scroll {
         0% {
             -webkit-transform: translateX(0);
             transform: translateX(0);
         }
 
         100% {
-            -webkit-transform: translateX(calc(-3.35rem * 22));
-            transform: translateX(calc(-3.35rem * 22));
+            -webkit-transform: translateX(calc(-3.35rem * 26));
+            transform: translateX(calc(-3.35rem * 26));
         }
     }
 
 
-    .slides>div:nth-child(12) {
+    .slides>div:nth-child(14) {
         animation-name: fluter12;
         animation-duration: 1.8s;
     }
 
-    .slides>div:nth-child(13) {
+    .slides>div:nth-child(15) {
         animation-name: fluter13;
         animation-duration: 1.5s;
     }
 
-    .slides>div:nth-child(14) {
+    .slides>div:nth-child(16) {
         animation-name: fluter14;
         animation-duration: 2s;
     }
 
-    .slides>div:nth-child(15) {
+    .slides>div:nth-child(17) {
         animation-name: fluter15;
         animation-duration: 1.1s;
     }
 
-    .slides>div:nth-child(16) {
+    .slides>div:nth-child(18) {
         animation-name: fluter16;
         animation-duration: 1.7s;
     }
 
-    .slides>div:nth-child(17) {
+    .slides>div:nth-child(19) {
         animation-name: fluter17;
         animation-duration: 1.9s;
     }
 
-    .slides>div:nth-child(18) {
+    .slides>div:nth-child(20) {
         animation-name: fluter18;
         animation-duration: 1.2s;
     }
 
-    .slides>div:nth-child(19) {
+    .slides>div:nth-child(21) {
         animation-name: fluter19;
         animation-duration: 1.6s;
     }
 
-    .slides>div:nth-child(20) {
+    .slides>div:nth-child(22) {
         animation-name: fluter20;
         animation-duration: 1.4s;
     }
 
-    .slides>div:nth-child(21) {
+    .slides>div:nth-child(23) {
         animation-name: fluter21;
         animation-duration: 2s;
     }
 
-    .slides>div:nth-child(22) {
+    .slides>div:nth-child(24) {
         animation-name: fluter22;
         animation-duration: 1.7s;
     }
 
-    .slides>div:nth-child(12),
-    .slides>div:nth-child(13),
+    .slides>div:nth-child(25) {
+        animation-name: fluter22;
+        animation-duration: 1.7s;
+    }
+
+    .slides>div:nth-child(26) {
+        animation-name: fluter22;
+        animation-duration: 1.7s;
+    }
+
+
     .slides>div:nth-child(14),
     .slides>div:nth-child(15),
     .slides>div:nth-child(16),
@@ -1507,13 +1583,17 @@ h2 {
     .slides>div:nth-child(19),
     .slides>div:nth-child(20),
     .slides>div:nth-child(21),
-    .slides>div:nth-child(22) {
+    .slides>div:nth-child(22),
+    .slides>div:nth-child(23),
+    .slides>div:nth-child(24),
+    .slides>div:nth-child(25),
+    .slides>div:nth-child(26) {
         animation-iteration-count: infinite;
         animation-timing-function: linear;
         animation-direction: alternate;
     }
 
-    @keyframes fluter12 {
+    @keyframes fluter14 {
         0% {
             transform: translateX(-4px);
         }
@@ -1523,7 +1603,7 @@ h2 {
         }
     }
 
-    @keyframes fluter13 {
+    @keyframes fluter15 {
         0% {
             transform: translateY(-3px);
         }
@@ -1533,7 +1613,7 @@ h2 {
         }
     }
 
-    @keyframes fluter14 {
+    @keyframes fluter16 {
         0% {
             transform: translateX(-px);
         }
@@ -1543,7 +1623,7 @@ h2 {
         }
     }
 
-    @keyframes fluter15 {
+    @keyframes fluter17 {
         0% {
             transform: translateY(5px);
         }
@@ -1553,7 +1633,7 @@ h2 {
         }
     }
 
-    @keyframes fluter16 {
+    @keyframes fluter18 {
         0% {
             transform: translateY(-5px);
         }
@@ -1563,7 +1643,7 @@ h2 {
         }
     }
 
-    @keyframes fluter17 {
+    @keyframes fluter19 {
         0% {
             transform: translateX(0px);
         }
@@ -1573,7 +1653,7 @@ h2 {
         }
     }
 
-    @keyframes fluter18 {
+    @keyframes fluter20 {
         0% {
             transform: translateX(5px);
         }
@@ -1583,7 +1663,7 @@ h2 {
         }
     }
 
-    @keyframes fluter19 {
+    @keyframes fluter21 {
         0% {
             transform: translateX(3px);
         }
@@ -1593,7 +1673,7 @@ h2 {
         }
     }
 
-    @keyframes fluter20 {
+    @keyframes fluter22 {
         0% {
             transform: translateY(-5px);
         }
@@ -1604,7 +1684,7 @@ h2 {
     }
 
 
-    @keyframes fluter21 {
+    @keyframes fluter23 {
         0% {
             transform: translateY(5px);
         }
@@ -1615,7 +1695,7 @@ h2 {
     }
 
 
-    @keyframes fluter22 {
+    @keyframes fluter24 {
         0% {
             transform: translateX(-5px);
         }
@@ -1623,8 +1703,27 @@ h2 {
         100% {
             transform: translateX(3px);
         }
-
     }
+
+    @keyframes fluter25 {
+        0% {
+            transform: translateY(0px);
+        }
+
+        100% {
+            transform: translateY(-5px);
+        }
+    }
+
+    @keyframes fluter26 {
+        0% {
+            transform: translateX(5px);
+        }
+
+        100% {
+            transform: translateX(-3px);
+        }
+    } */
 
     /*Currículo*/
     .dados_profissionais {
